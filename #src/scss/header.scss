@@ -1,0 +1,40 @@
+//====================================================================================================
+.header{
+   width: 100%;
+   display: flex;
+   font-family: $Monstercat;
+   align-items: center;
+   padding-top: 30px;
+   justify-content: space-between;
+   &__logo{
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      user-select: none;
+      &:hover{
+         opacity: 0.8;
+      }
+   }
+   &__menu{
+      display: flex;
+      flex: 1 1 auto;
+   }
+   &__link{
+      color: #fff;
+      text-transform: uppercase;
+      margin-left: 30px;
+      transition: color 0.25s ease-out 0s;
+      font-weight: 400;
+      &:hover{
+         transition: color 0.25s ease-out 0s;
+         color: #fce38a;
+         padding-bottom: 0.5px;
+         border-bottom: 1.5px solid #fce38a;
+      }
+      &:active{
+         color: darken(#fce38a, 10%);
+         border-color: darken(#fce38a, 10%);
+      }
+   }
+}
+//====================================================================================================
